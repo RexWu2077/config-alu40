@@ -21,7 +21,7 @@
             // | PLAY  | LCTL | LALT | LGUI | LOWR |     SPACE    |  RAIS | LARW | UARW | DARW  |  RARW |
 
             bindings = <
-&gresc            &kp Q     &kp W         &kp E          &kp R         &kp T        &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp ESC           &kp Q     &kp W         &kp E          &kp R         &kp T        &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LEFT_CONTROL  &kp A     &kp S         &kp D          &kp F         &kp G        &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp KP_ENTER
 &kp LSHFT         &kp Z     &kp X         &kp C          &kp V         &kp B        &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
 &kp TAB           &kp LALT  &kp KP_ENTER  &kp BACKSPACE  &kp LEFT_GUI  &lt 1 SPACE  &lt 1 SPACE  &mo 2  &kp DOWN   &kp UP   &kp LEFT  &kp RIGHT
@@ -34,8 +34,8 @@
             bindings = <
 &kp GRAVE  &kp N1                   &kp N2                    &kp N3           &kp N4         &kp N5        &kp N6            &kp N7             &kp N8         &kp N9            &kp N0         &kp BSPC
 &trans     &kp PLUS                 &kp KP_MINUS              &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp KP_EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp ENTER
-&kp LSHFT  &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS  &kp COMMA        &kp DOT        &trans        &trans            &trans             &kp C_VOL_DN   &kp C_VOL_UP      &trans         &trans
-&trans     &kp LEFT_ALT             &trans                    &trans           &kp LEFT_GUI   &trans        &trans            &trans             &trans         &trans            &trans         &trans
+&kp LSHFT  &kp KP_LEFT_PARENTHESIS  &kp KP_RIGHT_PARENTHESIS  &kp COMMA        &kp DOT        &trans        &kp KP_MINUS      &kp KP_EQUAL       &kp C_VOL_DN   &kp C_VOL_UP      &trans         &trans
+&trans     &kp LEFT_ALT             &trans                    &trans           &kp LEFT_GUI   &trans        &trans            &trans             &tog 1         &kp CAPSLOCK      &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_DEC C_BRI_INC>;
