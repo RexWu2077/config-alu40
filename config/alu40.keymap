@@ -40,14 +40,15 @@
         spotlight: spotlight {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LG(SPACE)>;
+            bindings = <&kp LG(SPACE)>;
             label = "SPOTLIGHT";
         };
 
         screenshot: screenshot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LG(NUMBER_4)>;
+            bindings = <&kp LGUI &kp LS(NUMBER_4)>, <&macro_press>;
+
             label = "SCREENSHOT";
         };
     };
