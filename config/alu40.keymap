@@ -14,7 +14,7 @@
         compatible = "zmk,combos";
 
         layer1 {
-            bindings = <&sl 1>;
+            bindings = <&tog 1>;
             key-positions = <44 45>;
         };
     };
