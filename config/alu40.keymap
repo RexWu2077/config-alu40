@@ -17,6 +17,16 @@
             bindings = <&tog 1>;
             key-positions = <44 45>;
         };
+
+        Capslock {
+            bindings = <&kp CAPS>;
+            key-positions = <36 37>;
+        };
+
+        functionkeylayer {
+            bindings = <&mo 3>;
+            key-positions = <47 46>;
+        };
     };
 
     keymap {
@@ -52,13 +62,22 @@
 
         lower {
             bindings = <
-&kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)          &kp LS(N7)       &kp LS(N8)     &kp LS(N9)         &kp LS(N0)    &kp PRINTSCREEN
-&trans         &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp LEFT_BRACE      &kp RIGHT_BRACE  &kp PIPE       &kp DOUBLE_QUOTES  &trans        &trans
-&trans         &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp LS(UNDERSCORE)  &kp PLUS         &kp C_BRI_DEC  &kp C_BRI_UP       &trans        &trans
-&trans         &kp F11     &kp F12     &trans      &trans      &trans      &trans              &trans           &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_CLR
+&kp LS(GRAVE)  &kp LS(N1)            &kp LS(N2)            &kp LS(N3)         &kp LS(N4)  &kp LS(N5)  &kp LS(N6)          &kp LS(N7)       &kp LS(N8)     &kp LS(N9)         &kp LS(N0)    &kp PRINTSCREEN
+&trans         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_APPLICATION  &kp F4      &kp F5      &kp LEFT_BRACE      &kp RIGHT_BRACE  &kp PIPE       &kp DOUBLE_QUOTES  &trans        &trans
+&trans         &kp F6                &kp C_PREVIOUS        &kp C_PLAY_PAUSE   &kp C_NEXT  &kp C_MUTE  &kp LS(UNDERSCORE)  &kp PLUS         &kp C_BRI_DEC  &kp C_BRI_UP       &trans        &trans
+&trans         &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans             &trans      &trans      &trans              &trans           &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_CLR
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans   &trans   &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
